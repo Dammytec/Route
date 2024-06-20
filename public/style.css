@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.container{ 
+ 
+  background-color: rgb(251, 247, 242);
+  
+  height: 100%;
+  width: 550px;
+  padding: 30px 30px;
+ } 
+img{
+    height: 250px;
+    width: 550px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.posts{
+  display: flex;
+  gap: 55px;
+  margin-top: 20px;
+}
+.middle-text{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.middle-text p{
+    margin-top: 10px;
+}
+.learn h4{
+     margin-bottom: 20px;
+}
+.synch p{
+      margin-bottom: 20px;
+}
+/*.synch{
+    display: flex;
+    gap: 60px;  
+}
+.work{
+    display: flex;
+  gap: 50px;
+}^/

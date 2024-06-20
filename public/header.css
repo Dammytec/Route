@@ -1,0 +1,47 @@
+.headers{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+   
+    transition: 0.4s ease-in;
+    
+}
+li a:hover{
+    color: blue;
+}
+li a.active::after,
+li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 4px;
+    color: blue;
+    background-color: blue;
+    right: 5px;
+    position: absolute;
+    
+   
+}

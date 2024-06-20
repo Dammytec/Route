@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/users.css">
+</head>
+<body>
+    <div class="all-users">
+        {{>__header}}
+        <div class="users">
+            <h2>Users Information</h2>
+        </div>
+        <form action="/user/user-blog" method="post" enctype="application/x-www-form-urlencoded" >
+            <div class="first-name">
+                <p>First name</p>
+                <input name="firstname" type="text" placeholder="first name">
+            </div>
+            <div class="last-name">
+                <p>Last name</p>
+                <input name="lastname" type="text" placeholder="last name">
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <input name="email" type="email" placeholder="email">
+            </div>
+            <div class="username">
+                <p>Username</p>
+                <input name="username" type="text" placeholder="username">
+            </div>
+            <div class="pss">
+                <p>Password</p>
+                <input name="password" type="password" placeholder="password">
+            </div>
+            <div class="age">
+                <p>Age</p>
+                <input name="age" type="number">
+            </div>
+           <select id="gender" name="gender" required >
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="other">Other</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+        <div class="locate">
+            <p>Location</p>
+            <input  name="loacation" type="text" placeholder="location">
+        </div>
+        <div class="bio">
+            <p>Bio</p>
+            <input name="bio" type="text" placeholder="bio">
+        </div>
+        <button class="btn" type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

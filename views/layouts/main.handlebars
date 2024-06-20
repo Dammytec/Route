@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+       {{> __header}}
+        <div class="middle-text">
+            <h2>Hi, i'm Dammy.</h2>
+            <p>Web developer and content creator</p>
+        </div>
+        <div class="image">
+            <img src="https://www.bonobology.com/wp-content/uploads/2019/08/Helping-out-depressed-friend.jpg.webp"
+             alt="" height="100%" width="100px">
+        </div>
+        <h2>Latest Posts</h2>
+        <div class="posts">
+            <div class="learn">
+                <h4>Learn Nodejs Export & MongoDB</h4>
+                <h4>Asynchronous Programming with Node.js</h4> 
+                <h4>Undestand how to work with MongoDB and Mongoose</h4>
+            </div>
+            <div class="synch">
+              <p>Tue April 18 2023</p>
+              <p>Tue April 18 2023</p>
+              <p>Tue April 18 2023</p>
+            </div>
+           
+        </div>
+        <div class="blogs">
+        {{title}}
+        {{#if all_blogs}}
+            {{#each all_blogs}}
+                <div class="blog" style="background-color: navy;color: white;padding: 20px;margin-top: 20px">
+                    <div>Title: {{title}}</div>
+                    <div>Tags: {{tags}}</div>
+                    <div>Author: {{author}}</div>
+                    <div>Likes: {{likes}}</div>
+                    <div>Created Date: {{created_at}}</div>
+                    <div>Content: {{content}}</div>
+                </div>
+            {{/each}}
+
+        {{/if}}
+    </div>
+    </div>
+   
+</body>
+</html>
+ 

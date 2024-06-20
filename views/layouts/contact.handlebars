@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/contact.css">
+</head>
+<body>
+    <div class="all-users">
+        {{> __header}}
+
+        <div class="post">
+            <h2>Users Blog</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+             It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+        </div>
+        <form  class="forms" action="/blogs/create-blog" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="titles">
+                <p>Title</p>
+                <input name="title" type="text" class="title" placeholder="Title">
+            </div>
+            <div class="tags">
+                <p>Tags</p>
+                <input name="tag" type="text" class="tag" placeholder="Tags(news,events,technology etc...)">
+            </div>
+            <div class="contents">
+                <p>Content</p>
+               <textarea name="content"  id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
